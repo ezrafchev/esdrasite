@@ -13,6 +13,4 @@ paginate_path: "/page:num/"
 markdown: kramdown
 permalink: pretty
 
-# Blog settings
-paginate: 5
-paginate_path: "/page:num/"
+
