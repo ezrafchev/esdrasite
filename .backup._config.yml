@@ -30,7 +30,7 @@ permalink: pretty
 # Personalizações do tema
 minimal_mistakes_skin: "air"
 header:
-  image: "background.mp4"
+  image: "background.jpg"
   caption: "Bem-vindo ao Esdrasite"
   actions:
     - label: "Leia mais"
@@ -42,6 +42,22 @@ footer:
       url: "/about/"
     - title: "Contato"
       url: "/contact/"
+    
+# Configurações de navegação
+navigation:
+  - title: "Início"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Sobre"
+    url: "/about/"
+  - title: "Contato"
+    url: "/contact/"
+
+# Configurações de layout
+layout: "single"
+show_excerpts: true
+show_related_posts: true
 plugins:
   - jekyll-paginate
   - jekyll-sitemap

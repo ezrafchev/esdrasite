@@ -3,7 +3,38 @@ description: >- # this means to ignore newlines until "baseurl:"
   Um blog moderno e fluido para postagens de mensagens e artigos.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ezrafchev.github.io/esdrasite" # the base hostname & protocol for your site
-remote_theme: "mmistakes/minimal-mistakes"
+theme: jekyll-theme-cayman
+
+# Personalizações do tema
+header:
+  image: "background.jpg"
+  caption: "Bem-vindo ao Esdrasite"
+  actions:
+    - label: "Leia mais"
+      url: "/blog/"
+      class: "btn--primary"
+footer:
+  links:
+    - title: "Sobre"
+      url: "/about/"
+    - title: "Contato"
+      url: "/contact/"
+    
+# Configurações de navegação
+navigation:
+  - title: "Início"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Sobre"
+    url: "/about/"
+  - title: "Contato"
+    url: "/contact/"
+
+# Configurações de layout
+layout: "single"
+show_excerpts: true
+show_related_posts: true
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
