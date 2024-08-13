@@ -17,6 +17,31 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
+
+# Configurações do blog
+paginate: 5
+paginate_path: "/page:num/"
+
+# Configurações de build
+markdown: kramdown
+permalink: pretty
+
+# Configurações do tema
+# Personalizações do tema
+minimal_mistakes_skin: "air"
+header:
+  image: "background.mp4"
+  caption: "Bem-vindo ao Esdrasite"
+  actions:
+    - label: "Leia mais"
+      url: "/blog/"
+      class: "btn--primary"
+footer:
+  links:
+    - title: "Sobre"
+      url: "/about/"
+    - title: "Contato"
+      url: "/contact/"
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
