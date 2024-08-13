@@ -19,8 +19,11 @@ paginate_path: "/page:num/"
 
 # Build settings
 markdown: kramdown
-collections:
-  posts:
-    output: true
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 
