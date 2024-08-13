@@ -5,6 +5,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ezrafchev.github.io/esdrasite" # the base hostname & protocol for your site
 theme: minima
 
+# Blog settings
+paginate: 5
+paginate_path: "/page:num/"
+
 # Build settings
 markdown: kramdown
 permalink: pretty
