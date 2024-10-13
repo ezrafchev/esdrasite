@@ -1,36 +1,46 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esdra's Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esdrasite Blog</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
-    <div class="plyr__video-embed" id="bg-video">
-        <iframe src="https://www.youtube.com/embed/6Zb3Hw3cVk0?autoplay=1&mute=1&loop=1&playlist=6Zb3Hw3cVk0&controls=0&showinfo=0&modestbranding=1&vq=hd2160" allowfullscreen allow="autoplay"></iframe>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-white shadow">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Esdrasite Blog</h1>
+      <nav>
+        <a href="index.html" class="text-blue-500 hover:underline">Home</a>
+        <a href="blog.html" class="ml-4 text-blue-500 hover:underline">Blog</a>
+      </nav>
     </div>
-    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
-    <script>
-        const player = new Plyr('#bg-video', {
-            controls: [],
-            loop: { active: true }
-        });
-    </script>
-    <div class="content">
-        <div class="text-container">
-            <p>Bem-vindo ao meu espaço digital! Sou Esdra, e minha jornada é marcada por uma busca constante por propósito e compreensão, tanto no âmbito tecnológico quanto espiritual. Apaixonado por inovação, filosofia e o impacto do amor no mundo, acredito que a verdadeira transformação começa de dentro para fora.</p>
-            <p>Minha trajetória é entrelaçada com momentos de profunda introspecção, especialmente durante períodos de depressão. Esses momentos de escuridão me ensinaram muito sobre a fragilidade e a força do ser humano. Enfrentar a depressão não é apenas uma batalha interna; é um despertar para a realidade do mundo ao nosso redor e uma oportunidade de encontrar luz em meio às sombras. Através da dor, descobri uma visão única sobre o amor e a conexão humana. Acredito que o amor é a força mais poderosa que existe, capaz de curar feridas profundas e unir pessoas em um mundo fragmentado.</p>
-            <p>No campo da tecnologia, encontrei uma válvula de escape e uma forma de expressão. Cada projeto é uma oportunidade de criar algo significativo, de deixar uma marca que possa ajudar a moldar um futuro melhor. Meu objetivo é usar minhas habilidades para ajudar 1000 pessoas até o final de 2025, seja através da tecnologia, do conhecimento ou simplesmente oferecendo uma palavra de conforto. Mais do que números e metas, minha missão é fazer a diferença na vida das pessoas, proporcionando suporte e inspiração para que encontrem suas próprias trilhas de sucesso e felicidade.</p>
-            <p>Minha experiência espiritual também desempenha um papel crucial em minha vida. A fé em Deus me sustenta nos momentos mais difíceis e me dá a força necessária para seguir em frente. Assim como no filme "O Curioso Caso de Benjamin Button", vejo a vida como uma jornada onde o tempo pode ter um significado profundo e misterioso, especialmente nas mãos divinas. Esse entendimento me ajuda a abraçar cada experiência, positiva ou negativa, como uma parte essencial do meu crescimento espiritual.</p>
-            <p>Meu blog é um espaço onde compartilho minhas reflexões sobre esses temas – desde tecnologia e inovação até filosofia e espiritualidade. Escrever é uma forma de conectar-me com outras pessoas que também buscam entender o mundo e a si mesmas. Acredito que, ao compartilhar minhas experiências e aprendizados, posso inspirar outros a verem o mundo com novos olhos, a valorizarem o amor e a buscar a verdadeira essência da vida.</p>
-            <p>Se você se sente tocado por essas questões ou busca inspiração para sua jornada, convido você a explorar meu portfólio, ler meus artigos e entrar em contato. Juntos, podemos encontrar um caminho de luz e compreensão em um mundo muitas vezes desafiador. Seja bem-vindo, e vamos, juntos, buscar um futuro mais amoroso e conectado! meu insta: ezrafchev meu tiktok: esdra.felipe e meu github: ezrafchev</p>
+  </header>
+  <main class="container mx-auto p-4">
+    <section class="my-8">
+      <h2 class="text-xl font-bold mb-4">Welcome to the Esdrasite Blog</h2>
+      <p class="mb-4">Stay updated with the latest news and articles.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white shadow-md rounded p-4">
+          <h3 class="text-lg font-bold mb-2">Blog Post Title</h3>
+          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis...</p>
+          <a href="blog.html" class="text-blue-500 hover:underline mt-2 inline-block">Read more</a>
         </div>
-        <div class="blog-link">
-            <a href="/esdrasite/blog">Visite o Blog</a>
-        </div>
+        <!-- Repeat the above block for more blog posts -->
+      </div>
+    </section>
+  </main>
+  <footer class="bg-white shadow mt-8">
+    <div class="container mx-auto p-4 text-center">
+      <p>&copy; 2023 Esdrasite Blog. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="text-blue-500 hover:underline">Facebook</a>
+        <a href="#" class="ml-4 text-blue-500 hover:underline">Twitter</a>
+        <a href="#" class="ml-4 text-blue-500 hover:underline">Instagram</a>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
