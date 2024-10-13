@@ -4,8 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ezrafchev.github.io/esdrasite" # the base hostname & protocol for your site
 theme: jekyll-theme-cayman
-
-# Personalizações do tema
+# Configurações do tema
 header:
   image: "background.jpg"
   caption: "Bem-vindo ao Esdrasite"
@@ -19,7 +18,6 @@ footer:
       url: "/about/"
     - title: "Contato"
       url: "/contact/"
-    
 # Configurações de navegação
 navigation:
   - title: "Início"
@@ -30,7 +28,6 @@ navigation:
     url: "/about/"
   - title: "Contato"
     url: "/contact/"
-
 # Configurações de layout
 layout: "single"
 show_excerpts: true
@@ -48,14 +45,14 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
-
 # Configurações do blog
 paginate: 5
 paginate_path: "/page:num/"
-
 # Configurações de build
 markdown: kramdown
 permalink: pretty
+
+
 
 # Configurações do tema
 # Personalizações do tema
