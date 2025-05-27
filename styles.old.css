@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,9 +7,9 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: 2px;
+    /* Removed overflow: hidden to allow scrolling */
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
     color: white;
     background: transparent;
 }
@@ -40,14 +39,10 @@ body, html {
 .text-container {
     width: 80%;
     max-width: 800px;
-    animation: scroll 60s linear infinite;
+    /* Removed scroll animation for better UX */
     background: rgba(0, 0, 0, 0.5); /* Fundo transparente */
     padding: 20px;
     border-radius: 10px;
 }
 
-@keyframes scroll {
-    0% { transform: translateY(100%); }
-    100% { transform: translateY(-100%); }
-}
-
+/* Removed keyframes scroll animation */

@@ -2,47 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles for Esdrasite site */
+
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    /* Removed overflow: hidden to allow scrolling */
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.5px;
-    color: white;
-    background: transparent;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
 #bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    overflow: hidden;
-    pointer-events: none;
-    background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.5); /* Fundo transparente */
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
 }
 
-.text-container {
-    width: 80%;
-    max-width: 800px;
-    /* Removed scroll animation for better UX */
-    background: rgba(0, 0, 0, 0.5); /* Fundo transparente */
-    padding: 20px;
-    border-radius: 10px;
+header {
+  background: transparent;
+  z-index: 20;
 }
 
-/* Removed keyframes scroll animation */
+header h1 {
+  color: #0ea5e9; /* electric blue */
+}
+
+nav a {
+  color: #60a5fa; /* lighter blue */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #3b82f6; /* brighter blue */
+}
+
+main {
+  z-index: 20;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+#typed-text {
+  font-family: 'Space Grotesk', 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+footer {
+  background: transparent;
+  color: #9ca3af; /* gray-400 */
+  z-index: 20;
+  padding: 1.5rem 0;
+  border-top: 1px solid #374151; /* gray-700 */
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  #typed-text {
+    font-size: 2.5rem;
+  }
+}

@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener("DOMContentLoaded", function() {
     const textContainer = document.querySelector(".text-container");
     const text = textContainer.innerHTML;
@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < text.length) {
             textContainer.innerHTML += text[index];
             index++;
-            setTimeout(typeText, 100); // Ajuste a velocidade da digitação aqui
+            setTimeout(typeText, 100); // Adjust typing speed here
         }
     }
 
     typeText();
 });
-
+*/
